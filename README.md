@@ -29,6 +29,6 @@ The project aims to create a user-friendly sign-up form with interactive validat
 
 
 ## How It Looks 🎥
-
+https://github.com/AmaanK03/Modern-Login-Form/assets/123104886/86cb91a3-6eca-4c0e-ba5b-4865dde46cd0
 
 
