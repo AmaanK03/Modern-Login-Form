@@ -2,11 +2,11 @@
 
 A simple Login & Form Validation project that validates user input in a sign-up form. It provides visual feedback to users by highlighting input fields when selected and changing the outline color based on the validity of the input.
 
-## Project Overview
+## Project Overview 💡
 
 The project aims to create a user-friendly sign-up form with interactive validation features. When users interact with the form, such as clicking on input fields or submitting the form, visual cues indicate whether the input is valid or requires correction. This enhances the user experience and helps prevent submission of incorrect or incomplete data.
 
-## Features
+## Features ⚙️
 
 - Interactive form validation: Provides visual feedback to users when interacting with input fields.
 - Dynamic class manipulation: Utilizes JavaScript to dynamically add or remove CSS classes to alter the appearance of input fields based on validation status.
@@ -26,6 +26,9 @@ The project aims to create a user-friendly sign-up form with interactive validat
 
 - Implement backend validation to enhance security and prevent submission of invalid data.
 - Add additional form fields and validation rules to create a more comprehensive sign-up form.
+
+
+## How It Looks 🎥
 
 
 
