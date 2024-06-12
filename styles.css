@@ -1,0 +1,142 @@
+/* Resets default styles and sets font-family */
+*,
+*::backdrop,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/* Controls the position of content and displays a photo as a backdrop */
+.full-screen-container {
+  background-image: url(/images/moutain.jpg); 
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  display: flex;   /* Enables content (html elements) inside this div to move freely */
+  justify-content: center;  /* Centers Item horrizontonally in the page */
+  align-items: center;  /* Centers Items vertically in the page */
+}
+
+/* Main box that contains the main content */
+
+.login-container {
+  border-radius: 20px;
+  background-color: hsla(200, 100%, 6%, 0.7);
+  padding: 40px 30px;
+  width: 80%;
+  max-width: 600px;
+}
+
+/* "Welcome" text */
+.login-title {
+  color: white;
+  text-align: center;
+  font-weight: normal;
+}
+
+/* Main container that houses the parent form tag */
+.form {
+  display: flex;
+  flex-direction: column;  /* Stacks form elements vertically (on top of each other) instead of horrizontally (next to each other) */
+  color: white;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* Container that houses form child elements such as inputs and labels */
+.input-group {
+  display: flex;
+  flex-direction: column; /* refer to form 2nd comment ;) (stacks the labels and inputs on top of each other  */
+}
+
+.input-group label {
+  color: white;
+  font-weight: lighter;
+}
+
+/* Styling for form inputs */
+
+.input-group input {
+  font-size: 1.2rem;  /* controls the size of typing box essentaily  */
+  background-color: hsla(200, 100%, 91%, 0.3);
+  border-radius: 5em;
+  font-weight: lighter;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+/* Styling for buttons */
+button {
+  padding: .5em 1em;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: white;
+  background-color: hsl(200, 100%, 50%, .25);
+  border-radius: .25em;
+  border: 1px solid hsl(200, 100%, 50%, .25);
+  outline: none;
+  cursor: pointer;
+}
+
+.input-group input:focus {     /*   gives the blue border effect around the typing box , shadow was used instead than the border  */
+  box-shadow: 0 0 0 2px hsl(200, 100%, 50%);
+  outline: none;
+}
+
+/* Styling for success messages */
+.input-group.success input {
+  box-shadow: 0 0 0 2px hsl(100, 60%, 50%);
+}
+
+/* Styling for error messages */
+.input-group.error input {
+  box-shadow: 0 0 0 2px hsl(0, 60%, 50%);
+}
+
+.input-group .msg {
+  display: none;
+  font-size: 0.75rem;
+}
+
+.input-group .msg {
+  display: none;
+  font-size: 0.75rem;
+}
+
+/* Displaying success and error messages */
+.input-group.error .msg,
+.input-group.success .msg {
+  display: block;
+}
+
+/* Styling for success message */
+.input-group.success .msg {
+  color: hsl(100, 60%, 50%);
+  display: none;
+}
+
+.input-group.success .bmsg {
+  color: hsl(100, 60%, 50%);
+  display: none;
+}
+
+/* Styling for error message */
+.input-group.error .msg {
+  color: hsl(0, 60%, 50%);
+}
+
+/* Button hover and focus styles */
+button:hover,
+button:focus {
+  background-color: hsl(200, 100%, 50%, .4);
+}
+
+.input-group input::placeholder {
+  color:rgb(197, 193, 193); /* Placeholder color */
+}
